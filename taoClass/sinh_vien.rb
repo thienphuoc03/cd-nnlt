@@ -37,8 +37,13 @@ class SinhVien
 
     #Tinh diem trung binh
     def average
-        ave = (toan + ly + hoa) / 3.0
-        puts "Điểm trung bình: #{ave}"
+        (toan + ly + hoa) / 3.0
+    end
+
+    def show
+        puts "Mã sinh viên: #{@id}"
+        puts "Tên sinh viên: #{@name}"
+        puts "Điểm trung bình: #{average().round(2)}"
     end
 end
 
@@ -56,4 +61,5 @@ std.set_ly(gets.chomp.to_i)
 puts "Nhập vào điểm hóa: "
 std.set_hoa(gets.chomp.to_i)
 
-std.average
+puts "\n\n***THÔNG TIN SINH VIÊN***"
+std.show
