@@ -4,7 +4,7 @@ len = n - 1
 total = 0
 
 arr = []
-(0..len).each do |i|
+(0..n-1).each do |i|
     puts "Nhập phần tử thứ #{i}: "
     num = gets.to_i
     arr.push(num)
