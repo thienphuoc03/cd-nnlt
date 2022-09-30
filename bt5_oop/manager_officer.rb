@@ -83,7 +83,9 @@ class Manager_Officer
                 puts "Invalid"
             end
         when 2
-            search_officer_by_name
+            puts "Enter name:"
+            name_143 = gets.chomp
+            search_officer_by_name (name)
         when 3
             show_list_in_for_officer
         when 4
