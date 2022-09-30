@@ -1,4 +1,7 @@
 require_relative 'engineer.rb'
+require_relative 'officer.rb'
+require_relative 'staff.rb'
+require_relative 'worker.rb'
 # engineer = Engineer.new
 class Manager_Officer
     officers_143 = Array.new
