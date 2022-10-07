@@ -47,7 +47,7 @@ class Manager_Officer
                 puts "Enter branch: "
                 branch_143 = gets.chomp
 
-                engineer_143 = Engineer.new(name_143, age_143, gender_143, address_143)
+                engineer_143 = Engineer.new(name_143, age_143, gender_143, address_143, branch_143)
 
                 add_officer(engineer_143)
 
