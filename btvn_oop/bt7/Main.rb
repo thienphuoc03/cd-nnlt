@@ -10,7 +10,7 @@ while true
   puts "Enter 4: To exit"
 
   line = gets.to_i
-  case test
+  case line
   when 1
     puts "\n-----Insert Teacher-----"
     puts "Enter ID:"
