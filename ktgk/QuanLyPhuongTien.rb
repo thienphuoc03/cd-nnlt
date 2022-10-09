@@ -10,6 +10,7 @@ class QuanLyPhuongTien
 
   def themPhuongTien(phuongTien)
     @dsPhuongTien << phuongTien
+    puts "Them thanh cong"
   end
 
   def xoaPhuongTien(id)
