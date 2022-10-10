@@ -27,10 +27,10 @@ while true
     bonus_143 = gets.to_i
     puts "Enter penaty"
     penaty_143 = gets.to_i
-    puts "Enter real salary:"
-    realSalary_143 = gets.to_i
+    # puts "Enter real salary:"
+    # realSalary_143 = gets.to_i
 
-    teacher_143 = Teacher.new(salary_143, bonus_143, penaty_143, realSalary_143, name_143, age_143, hometown_143, id_143)
+    teacher_143 = Teacher.new(salary_143, bonus_143, penaty_143, name_143, age_143, hometown_143, id_143)
 
     managerTeacher.addTeacher(teacher_143)
   when 2
