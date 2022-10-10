@@ -11,7 +11,7 @@ class ManagerTeacher
 
   def deleteById(id)
     @teachers_143.each do |teacher_143|
-      if teacher_143.id == id
+      if teacher_143.id_143 == id
         @teachers_143.delete(teacher_143)
         return true
       end
@@ -22,8 +22,9 @@ class ManagerTeacher
 
   def getSalary(id)
     @teachers_143.each do |teacher_143|
-      if teacher_143.id == id
-        return teacher_143.salary_143 + teacher_143.bonus_143 + teacher_143.penaty_143
+      if teacher_143.id_143 == id
+          salary = teacher_143.salary_143 + teacher_143.bonus_143 + teacher_143.penaty_143
+          puts "Salary: #{salary}"
       end
     end
 
