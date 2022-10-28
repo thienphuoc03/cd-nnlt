@@ -13,7 +13,15 @@
  *= require_tree .
  *= require_self
  */
-.title {
-  color: red;
+
+/* main */
+
+.main {
+  display: inline-block;
   text-align: center;
+  /* width: 80%; */
+}
+
+.title {
+  /* font-size: 16px; */
 }
