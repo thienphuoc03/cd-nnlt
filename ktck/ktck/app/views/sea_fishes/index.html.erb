@@ -1,0 +1,46 @@
+<div class="container mw-80">
+  <p style="color: green"><%= notice %></p>
+
+  <h2 class='text-center'>Quản lí các loài cá biển</h2>
+
+  <table class="table table-bordered table-striped">
+    <thead class="thead-light text-center">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Tên loài cá</th>
+        <th scope="col">Đặc điểm</th>
+        <th scope="col">Màu sắc</th>
+        <th scope="col">Kích thước</th>
+        <th scope="col">Tập tính</th>
+        <th scope="col">Nơi sống</th>
+        <th scope="col">Chức năng</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <div id="sea_fishes">
+        <% @sea_fishes.each do |sea_fish| %>
+          <tr>
+            <th scope="row"><%= sea_fish.id %></th>
+            <td><%= sea_fish.name_143 %></td>
+            <td><%= sea_fish.characteristic_143 %></td>
+            <td><%= sea_fish.color_143 %></td>
+            <td><%= sea_fish.size_143 %></td>
+            <td><%= sea_fish.behavior_143 %></td>
+            <td><%= sea_fish.habitat_143 %></td>
+            <td class='d-flex justify-content-around' >
+              <button class='btn btn-primary submit text-white '><%= link_to 'Xem', sea_fish %></button>
+              <button class='btn btn-primary submit text-white'><%= link_to 'Sửa', edit_sea_fish_path(sea_fish) %></button>
+            </td>
+          </tr>
+        <% end %>
+      </div>
+    </tbody>
+  </table>
+  <button class='btn btn-primary submit text-white'>
+    <%= link_to "Thêm mới", new_sea_fish_path %>
+  </button>
+
+
+
+</div>

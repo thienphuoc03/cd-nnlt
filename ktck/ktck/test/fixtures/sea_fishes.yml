@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_143: MyString
+  characteristic_143: MyString
+  color_143: MyString
+  size_143: MyString
+  behavior_143: MyString
+  habitat_143: MyString
+
+two:
+  name_143: MyString
+  characteristic_143: MyString
+  color_143: MyString
+  size_143: MyString
+  behavior_143: MyString
+  habitat_143: MyString

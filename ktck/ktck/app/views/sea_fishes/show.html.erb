@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @sea_fish %>
+
+<div>
+  <%= link_to "Chỉnh sửa", edit_sea_fish_path(@sea_fish) %> |
+  <%= link_to "Trở về", sea_fishes_path %>
+
+  <%= button_to "Xóa", @sea_fish, method: :delete, class "btn btn-danger" %>
+</div>

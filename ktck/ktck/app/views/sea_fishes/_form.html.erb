@@ -1,0 +1,47 @@
+<%= form_with(model: sea_fish) do |form| %>
+  <% if sea_fish.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(sea_fish.errors.count, "error") %> prohibited this sea_fish from being saved:</h2>
+
+      <ul>
+        <% sea_fish.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :ten_loai_ca, style: "display: block" %>
+    <%= form.text_field :name_143 %>
+  </div>
+
+  <div>
+    <%= form.label :dac_diem, style: "display: block" %>
+    <%= form.text_field :characteristic_143 %>
+  </div>
+
+  <div>
+    <%= form.label :mau_sac, style: "display: block" %>
+    <%= form.text_field :color_143 %>
+  </div>
+
+  <div>
+    <%= form.label :kich_thuoc, style: "display: block" %>
+    <%= form.text_field :size_143 %>
+  </div>
+
+  <div>
+    <%= form.label :tap_tinh, style: "display: block" %>
+    <%= form.text_field :behavior_143 %>
+  </div>
+
+  <div>
+    <%= form.label :noi_song, style: "display: block" %>
+    <%= form.text_field :habitat_143 %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
